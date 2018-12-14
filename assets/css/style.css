@@ -1,0 +1,210 @@
+body {
+    background: url('../images/baltmarine-bg..jpg');
+    color: #233994;
+}
+a {
+    color: #233994;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #233994;
+    text-decoration: none;
+    opacity: 0.9;
+}
+p {
+    margin-bottom: 0px;
+}
+img {
+    max-width: 100%;
+}
+.row.content {
+    margin: 0px;
+    background: #fff;
+    padding-top: 25px;
+}
+.lang-panel {
+    text-align: right;
+    background: #233994;
+}
+.lang-panel a {
+    color: #fff;
+}
+.lang-panel a.active {
+    color: #2a6fe6;
+}
+.lang-list {
+    padding: 6px 15px;
+    margin-bottom: 0px;
+    font-size: 10px;
+}
+.lang-list li{
+    text-transform: uppercase;
+    margin-left: 0px;
+    margin-right: 0px !important;
+}
+.logo-wrapper {
+    background: url('../images/baltmarine-riga-bg.png');
+    background-position: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.aside-content-text {
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 100px;
+}
+.logo-wrapper .logo {
+    padding-top: 8px;
+}
+.logo-wrapper .logo img {
+    margin: 0px 0px 10px 75px;
+}
+.tagline {
+    color: #233994;
+    margin-left: 75px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.tagline p:first-child{
+    font-weight: bold;
+    font-size: 33px;   
+}
+.tagline p:last-child{
+    padding-top: 2px;
+}
+.navbar {
+    padding: 3px 22px;
+}
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+.navigation, .navigation nav {
+    background: #233994;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.navigation .nav-item .nav-link {
+    color: #9da6b6;
+}
+.navigation .nav-item.active .nav-link {
+    color: #fff;
+}
+.navigation .nav-item .nav-link:hover, .navigation .nav-item .nav-link:focus {
+    color: #fff;
+}
+.navbar-toggler {
+    background: #ffffff9e;
+    border: #ccc;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+.dropdown-menu {
+    background: #233994;
+    margin: .1rem 0 0;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+.dropdown-menu .dropdown-item {
+    color: #9da6b6;
+    font-size: 13px;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background: transparent;
+    color: #fff;
+}
+.aside-title {
+    text-transform: uppercase;
+    display: block;
+    color: #233994;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #27419e;
+}
+.aside-list li {
+    padding-top: 10px;
+}
+.aside-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+.aside-list {
+    margin-bottom: 19px;
+}
+
+.aside-content {
+    margin-top: 15px;
+    background: url('../images/zajavka.jpg');
+    background-size: cover;
+    padding: 10px 15px;
+}
+
+.aside-content a {
+    margin: auto;
+    display: block;
+    max-width: 151px;
+    background: #27419e;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.btn {
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.breadcrumbs {
+    font-size: 13px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 991px) {
+    .tagline p:first-child {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 13px;
+        text-shadow: 0px 0px 5px #fff;
+    }
+
+    .logo-wrapper .logo img {
+        margin-left: 15px;
+    }
+
+    .aside-content-text {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-wrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .tagline {
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .logo-wrapper .logo img {
+        margin: 0px;
+    }
+}

@@ -30,12 +30,6 @@
 		}
 	}
 	?>
-	<div class="last-news">
-            <span class="title-wrap"><?php _e('Последние новости', 'bmt'); ?></span>
-            <div class="news-container row">
-            	<?php do_action('get_last_news_action'); ?>
-            </div>
-    </div>
 </main>
 
 <?php get_sidebar(); ?>

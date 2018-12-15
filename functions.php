@@ -104,11 +104,10 @@ function bmt_register_sidebars() {
 			'after_widget' => '',
 		]	
 	];
+	/* Repeat register_sidebar() code for additional sidebars. */
 	foreach ($sidebars as $sidebar) {
 			register_sidebar($sidebar);
-	}
-
-	/* Repeat register_sidebar() code for additional sidebars. */
+	}	
 }
 add_action( 'widgets_init', 'bmt_register_sidebars' );
 

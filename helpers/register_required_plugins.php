@@ -19,6 +19,11 @@ function bmt_register_required_plugins(){
 			'name' => 'Loco Translate',
 			'slug' => 'loco_translate',
 			'source' => 'https://downloads.wordpress.org/plugin/loco-translate.2.2.0.zip'
+		],
+		[
+			'name' => 'PHP Code Widget',
+			'slug' => 'php-code-widget',
+			'source' => 'https://downloads.wordpress.org/plugin/php-code-widget.2.3.zip'
 		]
 	];
 

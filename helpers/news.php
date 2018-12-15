@@ -22,15 +22,24 @@ add_action( 'init', 'change_post_object_label' );
 if(!function_exists('get_last_news')) {
 	function get_last_news(){
 		$posts_per_page = favpress_option('bmt_option.news_on_homepage');
-		$args = array (
+		$args = [
 		    'post_type'              => 'post',
 		    'nopaging'               => false,
 		    'posts_per_page'         => $posts_per_page,
 		    'order'                  => 'DESC',
 		    'orderby'                => 'ID',
-		);
+		];
 
 		$query = new WP_Query( $args );
+		if ( $query->have_posts() ) {
+		    while ( $query->have_posts() ) {
+		        $query->the_post();
+		        get_template_part('template-parts/news-item');
+		    }
+		} else {
+		    _e('Новостей нет', 'bmt');
+		}
+		wp_reset_postdata();
 	}
 }
 

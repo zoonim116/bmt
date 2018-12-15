@@ -2,13 +2,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BMT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-15 10:51+0000\n"
-"PO-Revision-Date: 2018-12-15 10:51+0000\n"
+"POT-Creation-Date: 2018-12-15 10:49+0000\n"
+"PO-Revision-Date: 2018-12-15 10:49+0000\n"
 "Last-Translator: admin <admin@test.loc>\n"
-"Language-Team: Latvian\n"
-"Language: lv\n"
-"Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
-"1 : 2;\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,15 +16,15 @@ msgstr ""
 
 #: functions.php:35
 msgid "Логотип в футере"
-msgstr ""
+msgstr "Footer Logo"
 
 #: functions.php:45
 msgid "Основное меню"
-msgstr ""
+msgstr "Main Menu"
 
 #: functions.php:97
 msgid "Главная страница"
-msgstr ""
+msgstr "Homepage"
 
 #: functions.php:98
 msgid "A short description of the sidebar."
@@ -33,31 +32,31 @@ msgstr ""
 
 #: index.php:9
 msgid "Главная"
-msgstr ""
+msgstr "Homepage"
 
 #: footer.php:7 helpers/favpress_options.php:41
 msgid "Адрес"
-msgstr ""
+msgstr "Address"
 
 #: footer.php:8
 msgid "Телефон"
-msgstr ""
+msgstr "Phone"
 
 #: footer.php:8 helpers/favpress_options.php:53
 msgid "Fax"
-msgstr ""
+msgstr "Fax"
 
 #: footer.php:9
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: footer.php:23
 msgid "Карта сайта"
-msgstr ""
+msgstr "Sitemap"
 
 #: sidebar.php:3
 msgid "Наши партнеры"
-msgstr ""
+msgstr "Our Partners"
 
 #: sidebar.php:12
 msgid "Заявка"
@@ -85,19 +84,19 @@ msgstr ""
 
 #: helpers/favpress_options.php:21
 msgid "Компания"
-msgstr ""
+msgstr "Company"
 
 #: helpers/favpress_options.php:27
 msgid "Услуги"
-msgstr ""
+msgstr "Services"
 
 #: helpers/favpress_options.php:34
 msgid "Общие настройки"
-msgstr ""
+msgstr "Common Settings"
 
 #: helpers/favpress_options.php:47
 msgid "Номер телефона"
-msgstr ""
+msgstr "Phone"
 
 #: helpers/favpress_options.php:59
 msgid "Email"

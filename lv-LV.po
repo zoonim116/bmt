@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BMT\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-14 20:52+0000\n"
+"PO-Revision-Date: 2018-12-15 10:53+0000\n"
+"Last-Translator: admin <admin@test.loc>\n"
+"Language-Team: Latvian\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
+"1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.1"
+
+#: functions.php:30
+msgid "Основное меню"
+msgstr "Galvenā izvēlne"
+
+#: functions.php:82 sidebar.php:2
+msgid "Наши партнеры"
+msgstr "mūsu partneri"
+
+#: functions.php:83
+msgid "A short description of the sidebar."
+msgstr ""
+
+#: sidebar.php:8
+msgid "Заявка"
+msgstr "Pieteikums"
+
+#: helpers/options.php:4
+msgid "Theme Settings"
+msgstr ""
+
+#: helpers/favpress_options.php:4
+msgid "Настройки темы"
+msgstr "Tēmas iestatījumi"
+
+#: helpers/favpress_options.php:8
+msgid "Основные"
+msgstr "Galvenais"
+
+#. Name of the theme
+msgid "BMT"
+msgstr "BMT"
+
+#. Author of the theme
+msgid "Maxym Nepomniashchiy"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://modzi.team/"
+msgstr ""
+
+#: sidebar.php:17
+msgid "Заполнить заявку"
+msgstr "Aizpildiet pieteikumu"
+
+#: index.php:9
+msgid "Главная"
+msgstr "Sākumlapa"
+
+#: footer.php:7 helpers/favpress_options.php:41
+msgid "Адрес"
+msgstr "Adrese"
+
+#: footer.php:8 helpers/favpress_options.php:53
+msgid "Fax"
+msgstr "Fax"
+
+#: footer.php:23
+msgid "Карта сайта"
+msgstr "Vietnes karte"
+
+#: helpers/favpress_options.php:59
+msgid "Email"
+msgstr "Email"
+
+#: footer.php:8
+msgid "Телефон"
+msgstr "Tālrunis"
+
+#: footer.php:9
+msgid "E-mail"
+msgstr "E-mail"

@@ -11,42 +11,65 @@ return [
  			'controls' => [
  				[
                     'type' => 'section',
-                    'title' => __('', 'bmt'),
+                    'title' => __('Настройка футера', 'bmt'),
                     'name' => 'section_1',
                     'description' => __('', 'bmt'),
                     'fields' => [
                         [
                             'type' => 'textbox',
-                            'name' => 'address',
-                            'label' => __('Адрес', 'audent'),
-                            'default' => 'г. Днепр, ул. Князя Владимира Великого, 15а',
+                            'name' => 'company',
+                            'label' => __('Компания', 'bmt'),
+                            'default' => '',
                         ],
                         [
                             'type' => 'textbox',
-                            'name' => 'phone_1',
-                            'label' => __('Номер телефона (Киевстар)', 'audent'),
-                            'default' => '(067) 567-89-00',
+                            'name' => 'services',
+                            'label' => __('Услуги', 'bmt'),
+                            'default' => '',
                         ],
-                        [
-                            'type' => 'textbox',
-                            'name' => 'phone_2',
-                            'label' => __('Номер телефона (Lifecell) ', 'audent'),
-                            'default' => '(067) 567-89-00',
-                        ],
-                        [
-                            'type' => 'textbox',
-                            'name' => 'phone_3',
-                            'label' => __('Номер телефона (Vodafone) ', 'audent'),
-                            'default' => '(095) 123-45-67',
-                        ],
-                        [
-                            'type' => 'textbox',
-                            'name' => 'phone_4',
-                            'label' => __('Номер телефона (Городской номер) ', 'audent'),
-                            'default' => '(056) 123-45-67',
-                        ]
                     ]
                 ],
+                [
+                	'type' => 'section',
+                    'title' => __('Общие настройки', 'bmt'),
+                    'name' => 'section_2',
+                    'description' => __('', 'bmt'),
+                    'fields' => [
+                        [
+                            'type' => 'textbox',
+                            'name' => 'adress',
+                            'label' => __('Адрес', 'bmt'),
+                            'default' => '',
+                        ],
+                        [
+                            'type' => 'textbox',
+                            'name' => 'phone',
+                            'label' => __('Номер телефона', 'bmt'),
+                            'default' => '',
+                        ],
+                        [
+                            'type' => 'textbox',
+                            'name' => 'fax',
+                            'label' => __('Fax', 'bmt'),
+                            'default' => '',
+                        ],
+                        [
+                        	'type' => 'textbox',
+                        	'name' => 'email',
+                        	'label' => __('Email', 'bmt'),
+                        	'default' => ''
+                        ],
+                        [
+                        	'type' => 'slider',
+					        'name' => 'news_on_homepage',
+					        'label' => __('Кол-во новостей на главной странице', 'bmt'),
+					        'min' => '2',
+					        'max' => '10',
+					        'step' => '1',
+					        'default' => '2',
+                        ]
+                    ]
+                ]
  			]
  		]
  	]

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="<?php echo WPGlobus::Config()->language; ?>">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,8 +47,4 @@
                 </section>
             </header>
         <div class="row content">
-            <main class="col-sm-7 col-lg-8 col-xs-12">
-                <div class="breadcrumbs">
-                    <a href="/">Home</a>
-                </div>
-            </main>
+            

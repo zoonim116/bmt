@@ -5,6 +5,7 @@ body {
 a {
     color: #233994;
     transition: all 0.2s;
+    font-size: 13px;
 }
 a:hover {
     color: #233994;
@@ -13,6 +14,7 @@ a:hover {
 }
 p {
     margin-bottom: 0px;
+    font-size: 13px;
 }
 img {
     max-width: 100%;
@@ -118,12 +120,13 @@ img {
     background: transparent;
     color: #fff;
 }
-.aside-title {
+.aside-title, .title-wrap {
     text-transform: uppercase;
     display: block;
     color: #233994;
     padding-bottom: 1px;
     border-bottom: 1px solid #27419e;
+    font-weight: bold;
 }
 .aside-list li {
     padding-top: 10px;
@@ -168,6 +171,65 @@ img {
     border-bottom: 1px solid;
 }
 
+footer {
+    background: #233994;
+    color: #9da6b6;
+    padding: 13px 0px 22px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #9da6b6;
+}
+
+footer a:hover {
+    color: #9da6b6;
+}
+
+
+footer .row {
+    margin: 0px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo > a {
+    width: 87px;
+}
+
+.footer-logo > div {
+    text-transform: uppercase;
+    width: calc(100% - 90px);
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.news-title {
+    text-transform: uppercase;
+    display: block;
+    color: #233994;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 12px;
+}
+
+.short-news {
+    display: block;
+}
+
+.news-item {
+    padding: 25px 0px;
+}
+
+.news-container.row {
+    margin: 0px;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
@@ -193,7 +255,20 @@ img {
     }
 }
 
+@media (max-width: 767px) {
+    footer .row > div {
+        margin-bottom: 40px;
+    }
+
+    .aside-content a {
+        font-size: 11px;
+    }
+}
+
 @media (max-width: 480px) {
+    .aside-content a {
+        font-size: 14px;
+    }
     .logo-wrapper {
         display: block;
         text-align: center;

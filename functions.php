@@ -2,6 +2,7 @@
 require_once 'helpers/class-tgm-plugin-activation.php';
 require_once 'helpers/register_required_plugins.php';
 require_once 'helpers/bs4navwalker.php';
+require_once 'helpers/news.php';
 
 /************************ Setup theme **********************************************/
 add_action( 'after_setup_theme', 'bmt_setup' );
@@ -24,6 +25,21 @@ function wpdocs_theme_name_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
+function themeName_customize_register( $wp_customize ) {
+
+    $wp_customize->add_setting('header_footer', array(
+        'transport'         => 'refresh',
+        'height'         => 325,
+    ));    
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_footer', array(
+        'label'             => __('Логотип в футере', 'bmt'),
+        'section'           => 'title_tagline',
+        'settings'          => 'header_footer',
+    )));    
+}
+add_action('customize_register', 'themeName_customize_register');
+
 function register_menus() {
     register_nav_menus(
         array(
@@ -44,11 +60,8 @@ if(!function_exists('bmt_show_language_panel')) {
 					} else {
 						echo "<li class=\"list-inline-item\"><a href=\"{$url}\">{$lang}</a></li>";
 					}
-					
-					
-
 				}
-			echo '</ul><!-- .wpglobus-selector-box -->';
+			echo '</ul>';
 		}
 	}
 }
@@ -75,19 +88,37 @@ $theme_options = new FavPress_Option (array(
  */
 function bmt_register_sidebars() {
 
-	/* Register the primary sidebar. */
-	register_sidebar(
-		array(
-			'id' => 'partners-sidebar',
-			'name' => __( 'Наши партнеры', 'bmt' ),
+	$sidebars = [
+		[
+			'id' => 'homepage-sidebar',
+			'name' => __( 'Главная страница', 'bmt' ),
 			'description' => __( 'A short description of the sidebar.', 'bmt' ),
-			'before_widget' => '<aside id="%1$s" class="col-sm-5 col-lg-4 col-xs-12 aside-wrap %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		)
-	);
+			'before_widget' => '',
+			'after_widget' => '',
+		],
+		[
+			'id' => 'partners-sidebar',
+			'name' => __( 'Виджет партнеров', 'bmt' ),
+			'description' => __( 'Виджет со ссылками на партнеров.', 'bmt' ),
+			'before_widget' => '',
+			'after_widget' => '',
+		]	
+	];
+	foreach ($sidebars as $sidebar) {
+			register_sidebar($sidebar);
+	}
 
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
-add_action( 'widgets_init', 'textdomain_register_sidebars' );
+add_action( 'widgets_init', 'bmt_register_sidebars' );
+
+function change_post_menu_label() {
+    global $menu, $submenu;
+
+    $menu[5][0] = 'Новости';
+    $submenu['edit.php'][5][0] = 'Новости';
+    $submenu['edit.php'][10][0] = 'Добавить новость';
+    $submenu['edit.php'][16][0] = 'Тэги';
+    echo '';
+}
+add_action( 'admin_menu', 'change_post_menu_label' );

@@ -1,3 +1,4 @@
+<? /* Template Name: Cайдбар с формой обартной связи */ ?>
 <?php get_header(); ?>
 <main class="col-sm-7 col-lg-8 col-xs-12">
     <div class="breadcrumbs">
@@ -9,23 +10,9 @@
 		        <span itemprop="name"><?php _e('Главная', 'bmt'); ?></span></a>
 		    <meta itemprop="position" content="1" />
 		  </li>
-		  <?php if(is_single()): ?>
-		  	<?php
-		  		$obj = get_post_type_object('post');
-		  	 ?>
-		  	 ››
-		  	<li class="list-inline-item" itemprop="itemListElement" itemscope
-		      itemtype="http://schema.org/ListItem">
-		    <a itemtype="http://schema.org/Thing"
-		       itemprop="item" href="<?php echo get_page_link(78); ?>">
-		        <span itemprop="name"><?php _e($obj->labels->name, 'bmt'); ?></span></a>
-		    <meta itemprop="position" content="1" />
-		  </li>
-
-		  <?php endif; ?>
-		  <?php if(!is_front_page()): ?>
+		  	<?php if(!is_front_page()): ?>
 		  		<?php global $wp; ?>
-			  ››
+			  &#187;
 			  <li class="list-inline-item" itemprop="itemListElement" itemscope
 			      itemtype="http://schema.org/ListItem">
 			    <a itemtype="http://schema.org/Thing"
@@ -36,8 +23,9 @@
 			<?php endif; ?>
 		</ol>
     </div>
-    <div class="content">
-	    <?php 
+    <span class="title-page"><?php the_title(); ?></span>
+    <div class="content-wrap">
+    	<?php 
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				the_post(); 
@@ -45,9 +33,17 @@
 			}
 		}
 		?>
-	</div>
+    </div>
+    <?php if(is_front_page()): ?>
+		<div class="last-news">
+	            <span class="title-wrap"><?php _e('Последние новости', 'bmt'); ?></span>
+	            <div class="news-container row">
+	            	<?php do_action('get_last_news_action'); ?>
+	            </div>
+	    </div>
+	<?php endif; ?>
 </main>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('contact_us'); ?>
 
 <?php get_footer(); ?>

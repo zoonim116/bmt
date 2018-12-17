@@ -11,7 +11,7 @@
 		  </li>
 		  	<?php if(!is_front_page()): ?>
 		  		<?php global $wp; ?>
-			  ››
+			  &#187;
 			  <li class="list-inline-item" itemprop="itemListElement" itemscope
 			      itemtype="http://schema.org/ListItem">
 			    <a itemtype="http://schema.org/Thing"
@@ -22,22 +22,27 @@
 			<?php endif; ?>
 		</ol>
     </div>
-    <?php 
-	if ( have_posts() ) {
-		while ( have_posts() ) {
-			the_post(); 
-			the_content();
+    <span class="title-page"><?php the_title(); ?></span>
+    <div class="content-wrap">
+    	<?php 
+		if ( have_posts() ) {
+			while ( have_posts() ) {
+				the_post(); 
+				the_content();
+			}
 		}
-	}
-	?>
-	<div class="last-news">
-            <span class="title-wrap"><?php _e('Последние новости', 'bmt'); ?></span>
-            <div class="news-container row">
-            	<?php do_action('get_last_news_action'); ?>
-            </div>
+		?>
     </div>
+    <?php if(is_front_page()): ?>
+		<div class="last-news">
+	            <span class="title-wrap"><?php _e('Последние новости', 'bmt'); ?></span>
+	            <div class="news-container row">
+	            	<?php do_action('get_last_news_action'); ?>
+	            </div>
+	    </div>
+	<?php endif; ?>
 </main>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('proposal'); ?>
 
 <?php get_footer(); ?>

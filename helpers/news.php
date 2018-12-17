@@ -44,3 +44,33 @@ if(!function_exists('get_last_news')) {
 }
 
 add_action('get_last_news_action', 'get_last_news');
+
+if(!function_exists('get_news')) {
+	function get_news() {
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 0;
+
+		$postsPerPage = (get_option('posts_per_page')) ? get_option('posts_per_page') : 10;;
+		$postOffset = $paged * $postsPerPage;
+
+		$args = array(
+		    'posts_per_page'  => $postsPerPage,
+		    'category_name'   => $btmetanm,
+		    'offset'          => $postOffset,
+		    'post_type'       => 'post'
+		);
+
+		$query = new WP_Query( $args );
+		if ( $query->have_posts() ) {
+		    while ( $query->have_posts() ) {
+		        $query->the_post();
+		        get_template_part('template-parts/news-item');
+		    }
+		} else {
+		    _e('Новостей нет', 'bmt');
+		}
+		wp_reset_postdata();
+		
+	}
+}
+
+add_action('get_news_action', 'get_news');

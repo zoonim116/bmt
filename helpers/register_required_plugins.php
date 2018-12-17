@@ -24,6 +24,16 @@ function bmt_register_required_plugins(){
 			'name' => 'PHP Code Widget',
 			'slug' => 'php-code-widget',
 			'source' => 'https://downloads.wordpress.org/plugin/php-code-widget.2.3.zip'
+		],
+		[
+			'name' => 'Contact Form 7',
+			'slug' => 'contact-form-7',
+			'source' => 'https://downloads.wordpress.org/plugin/contact-form-7.5.1.zip'
+		],
+		[
+			'name' => 'Really Simple CAPTCHA',
+			'slug' => 'contact-form-7',
+			'source' => 'https://downloads.wordpress.org/plugin/really-simple-captcha.2.0.1.zip'
 		]
 	];
 

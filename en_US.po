@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BMT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-15 10:49+0000\n"
-"PO-Revision-Date: 2018-12-15 10:49+0000\n"
+"POT-Creation-Date: 2018-12-17 13:04+0000\n"
+"PO-Revision-Date: 2018-12-17 13:04+0000\n"
 "Last-Translator: admin <admin@test.loc>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -14,25 +14,65 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.0; wp-5.0.1"
 
-#: functions.php:35
+#: functions.php:36
 msgid "Логотип в футере"
 msgstr "Footer Logo"
 
-#: functions.php:45
+#: functions.php:46
 msgid "Основное меню"
 msgstr "Main Menu"
 
-#: functions.php:97
+#: functions.php:94
 msgid "Главная страница"
 msgstr "Homepage"
 
-#: functions.php:98
+#: functions.php:95
 msgid "A short description of the sidebar."
 msgstr ""
 
-#: index.php:9
+#: functions.php:101
+msgid "Виджет партнеров"
+msgstr ""
+
+#: functions.php:102
+msgid "Виджет со ссылками на партнеров."
+msgstr ""
+
+#: functions.php:108
+msgid "Виджет формы обратной связи"
+msgstr ""
+
+#: functions.php:109
+msgid "Виджет формы обратной связи."
+msgstr ""
+
+#: sidebar-contact_us.php:2 sidebar-proposal.php:2 sidebar.php:2
+msgid "Наши партнеры"
+msgstr "Our Partners"
+
+#: sidebar-contact_us.php:4
+msgid "Вопрос"
+msgstr "Question"
+
+#. Name of the template
+msgid "Cайдбар с формой обартной связи"
+msgstr ""
+
+#: page-with-contact-sidebar.php:10 index.php:9
+#: page-with-request-sidebar.php:10 page-news.php:10 single.php:9
+#: page-with-empty-sidebar.php:10
 msgid "Главная"
 msgstr "Homepage"
+
+#: page-with-contact-sidebar.php:39 index.php:38
+#: page-with-request-sidebar.php:39 page-news.php:32
+#: page-with-empty-sidebar.php:39
+msgid "Последние новости"
+msgstr ""
+
+#. Name of the template
+msgid "Сайдбар с заявкой"
+msgstr ""
 
 #: footer.php:7 helpers/favpress_options.php:41
 msgid "Адрес"
@@ -54,16 +94,60 @@ msgstr "E-mail"
 msgid "Карта сайта"
 msgstr "Sitemap"
 
-#: sidebar.php:3
-msgid "Наши партнеры"
-msgstr "Our Partners"
+#. Name of the template
+msgid "Шаблон новостной страницы"
+msgstr ""
 
-#: sidebar.php:12
+#: sidebar-proposal.php:4
 msgid "Заявка"
 msgstr ""
 
-#: sidebar.php:17
+#: sidebar-proposal.php:9
 msgid "Заполнить заявку"
+msgstr ""
+
+#. Name of the template
+msgid "Пустой сайдбар"
+msgstr ""
+
+#: helpers/news.php:7
+msgid "Новости"
+msgstr "News"
+
+#: helpers/news.php:8
+msgid "Новость"
+msgstr ""
+
+#: helpers/news.php:9
+msgid "Добавить"
+msgstr ""
+
+#: helpers/news.php:10
+msgid "Добавить новость"
+msgstr ""
+
+#: helpers/news.php:11
+msgid "Редактировать новость"
+msgstr ""
+
+#: helpers/news.php:13
+msgid "Посмотреть новость"
+msgstr ""
+
+#: helpers/news.php:14
+msgid "Найти новость"
+msgstr ""
+
+#: helpers/news.php:15
+msgid "Новости не найдены"
+msgstr ""
+
+#: helpers/news.php:16
+msgid "новости не найдена в корзине"
+msgstr ""
+
+#: helpers/news.php:40 helpers/news.php:69
+msgid "Новостей нет"
 msgstr ""
 
 #: helpers/options.php:4
@@ -100,6 +184,10 @@ msgstr "Phone"
 
 #: helpers/favpress_options.php:59
 msgid "Email"
+msgstr ""
+
+#: helpers/favpress_options.php:65
+msgid "Кол-во новостей на главной странице"
 msgstr ""
 
 #. Name of the theme

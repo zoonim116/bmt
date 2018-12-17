@@ -102,7 +102,14 @@ function bmt_register_sidebars() {
 			'description' => __( 'Виджет со ссылками на партнеров.', 'bmt' ),
 			'before_widget' => '',
 			'after_widget' => '',
-		]	
+		],
+        [
+            'id' => 'contact-sidebar',
+            'name' => __( 'Виджет формы обратной связи', 'bmt' ),
+            'description' => __( 'Виджет формы обратной связи.', 'bmt' ),
+            'before_widget' => '',
+            'after_widget' => '',
+        ]	
 	];
 	/* Repeat register_sidebar() code for additional sidebars. */
 	foreach ($sidebars as $sidebar) {

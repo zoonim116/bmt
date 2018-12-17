@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BMT\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-17 13:04+0000\n"
-"PO-Revision-Date: 2018-12-17 13:04+0000\n"
+"PO-Revision-Date: 2018-12-17 16:15+0000\n"
 "Last-Translator: admin <admin@test.loc>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -68,7 +68,7 @@ msgstr "Homepage"
 #: page-with-request-sidebar.php:39 page-news.php:32
 #: page-with-empty-sidebar.php:39
 msgid "Последние новости"
-msgstr ""
+msgstr "Latest news"
 
 #. Name of the template
 msgid "Сайдбар с заявкой"

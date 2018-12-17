@@ -102,6 +102,7 @@ button:focus {
 }
 .tagline p:last-child{
     padding-top: 2px;
+    font-size: 15px;
 }
 .navbar {
     padding: 3px 22px;
@@ -366,6 +367,14 @@ label {
     box-shadow: 0 0 0 2px rgba(39, 65, 158, 0.25);
 }
 
+.request-form .form-group {
+    margin-bottom: 18px;
+}
+
+.aside-news .news-item {
+    padding: 9px 0px 0px;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
@@ -392,6 +401,18 @@ label {
 }
 
 @media (max-width: 767px) {
+
+    .tagline p:first-child {
+        font-size: 16px;
+    }
+
+    .tagline p:last-child {
+        font-size: 10px;
+    }
+
+    .logo-wrapper {
+        background-position: center;
+    }
     footer .row > div {
         margin-bottom: 40px;
     }
@@ -425,6 +446,7 @@ label {
 
     .logo-wrapper .logo img {
         margin: 0px;
+        max-width: 100px;
     }
 
     .map-wrap iframe {

@@ -2,6 +2,7 @@
 require_once 'helpers/class-tgm-plugin-activation.php';
 require_once 'helpers/register_required_plugins.php';
 require_once 'helpers/bs4navwalker.php';
+require_once 'helpers/bmt_recent_posts_widget.php';
 require_once 'helpers/news.php';
 
 /************************ Setup theme **********************************************/
@@ -107,6 +108,13 @@ function bmt_register_sidebars() {
             'id' => 'contact-sidebar',
             'name' => __( 'Виджет формы обратной связи', 'bmt' ),
             'description' => __( 'Виджет формы обратной связи.', 'bmt' ),
+            'before_widget' => '',
+            'after_widget' => '',
+        ],
+        [
+            'id' => 'news-sidebar',
+            'name' => __( 'Виджет последних новостей', 'bmt' ),
+            'description' => __( 'Виджет последних новостей.', 'bmt' ),
             'before_widget' => '',
             'after_widget' => '',
         ]	

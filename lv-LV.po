@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BMT\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-14 20:52+0000\n"
-"PO-Revision-Date: 2018-12-17 13:12+0000\n"
+"PO-Revision-Date: 2018-12-18 09:32+0000\n"
 "Last-Translator: admin <admin@test.loc>\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
@@ -94,3 +94,16 @@ msgstr "Jautājums"
 #: helpers/news.php:7
 msgid "Новости"
 msgstr "Jaunumi"
+
+#: page-with-contact-sidebar.php:39 index.php:38
+#: page-with-request-sidebar.php:39 page-with-empty-sidebar.php:39
+msgid "Последние новости"
+msgstr "Pēdējie jaunumi"
+
+#: page-news.php:50
+msgid "Вперед"
+msgstr "Jaunākas ziņas "
+
+#: page-news.php:51
+msgid "Назад"
+msgstr "Vecāki ziņojumi"

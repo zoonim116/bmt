@@ -6,6 +6,6 @@
             <div class="aside-content-text">
                 <?php dynamic_sidebar( 'homepage-sidebar' ); ?>
             </div>
-            <a href="#" class="btn"><? _e('Заполнить заявку', 'bmt'); ?></a>
+            <a href="<?php echo get_page_link(73); ?>" class="btn"><? _e('Заполнить заявку', 'bmt'); ?></a>
         </div>
 </aside>

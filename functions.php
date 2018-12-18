@@ -117,7 +117,14 @@ function bmt_register_sidebars() {
             'description' => __( 'Виджет последних новостей.', 'bmt' ),
             'before_widget' => '',
             'after_widget' => '',
-        ]	
+        ],
+        [
+            'id' => 'news-homepage',
+            'name' => __( 'Виджет последних новостей на главной странице', 'bmt' ),
+            'description' => __( 'Виджет последних новостей на главной странице.', 'bmt' ),
+            'before_widget' => '',
+            'after_widget' => '',
+        ]   
 	];
 	/* Repeat register_sidebar() code for additional sidebars. */
 	foreach ($sidebars as $sidebar) {
@@ -136,3 +143,10 @@ function change_post_menu_label() {
     echo '';
 }
 add_action( 'admin_menu', 'change_post_menu_label' );
+
+function get_translated_content($text, $from, $to) {
+    $translated_text = WPGlobus_Filters::filter__text($text);
+    echo substr($translated_text, $from, $to);
+}
+
+add_action('get_translated_content_action', 'get_translated_content', 10, 3);

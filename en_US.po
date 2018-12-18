@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BMT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-17 13:04+0000\n"
-"PO-Revision-Date: 2018-12-17 16:15+0000\n"
+"POT-Creation-Date: 2018-12-18 09:26+0000\n"
+"PO-Revision-Date: 2018-12-18 09:27+0000\n"
 "Last-Translator: admin <admin@test.loc>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -14,65 +14,102 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.0; wp-5.0.1"
 
-#: functions.php:36
-msgid "Логотип в футере"
-msgstr "Footer Logo"
-
-#: functions.php:46
-msgid "Основное меню"
-msgstr "Main Menu"
-
-#: functions.php:94
-msgid "Главная страница"
-msgstr "Homepage"
-
-#: functions.php:95
-msgid "A short description of the sidebar."
-msgstr ""
-
-#: functions.php:101
-msgid "Виджет партнеров"
-msgstr ""
-
-#: functions.php:102
-msgid "Виджет со ссылками на партнеров."
-msgstr ""
-
-#: functions.php:108
-msgid "Виджет формы обратной связи"
-msgstr ""
-
-#: functions.php:109
-msgid "Виджет формы обратной связи."
-msgstr ""
-
-#: sidebar-contact_us.php:2 sidebar-proposal.php:2 sidebar.php:2
-msgid "Наши партнеры"
-msgstr "Our Partners"
-
-#: sidebar-contact_us.php:4
-msgid "Вопрос"
-msgstr "Question"
-
 #. Name of the template
-msgid "Cайдбар с формой обартной связи"
+msgid "Пустой сайдбар"
 msgstr ""
 
-#: page-with-contact-sidebar.php:10 index.php:9
-#: page-with-request-sidebar.php:10 page-news.php:10 single.php:9
-#: page-with-empty-sidebar.php:10
+#: page-with-empty-sidebar.php:10 page-with-request-sidebar.php:10
+#: page-with-news-sidebar.php:10 page-news.php:10 index.php:9
+#: page-with-contact-sidebar.php:10 single.php:9
 msgid "Главная"
 msgstr "Homepage"
 
-#: page-with-contact-sidebar.php:39 index.php:38
-#: page-with-request-sidebar.php:39 page-news.php:32
-#: page-with-empty-sidebar.php:39
+#: page-with-empty-sidebar.php:39 page-with-request-sidebar.php:39
+#: page-with-news-sidebar.php:39 page-news.php:61 index.php:38
+#: page-with-contact-sidebar.php:39 sidebar-news.php:4
 msgid "Последние новости"
 msgstr "Latest news"
+
+#: functions.php:37
+msgid "Логотип в футере"
+msgstr "Footer Logo"
+
+#: functions.php:47
+msgid "Основное меню"
+msgstr "Main Menu"
+
+#: functions.php:95
+msgid "Главная страница"
+msgstr "Homepage"
+
+#: functions.php:96
+msgid "A short description of the sidebar."
+msgstr ""
+
+#: functions.php:102
+msgid "Виджет партнеров"
+msgstr ""
+
+#: functions.php:103
+msgid "Виджет со ссылками на партнеров."
+msgstr ""
+
+#: functions.php:109
+msgid "Виджет формы обратной связи"
+msgstr ""
+
+#: functions.php:110
+msgid "Виджет формы обратной связи."
+msgstr ""
+
+#: functions.php:116
+msgid "Виджет последних новостей"
+msgstr ""
+
+#: functions.php:117
+msgid "Виджет последних новостей."
+msgstr ""
+
+#: functions.php:123
+msgid "Виджет последних новостей на главной странице"
+msgstr ""
+
+#: functions.php:124
+msgid "Виджет последних новостей на главной странице."
+msgstr ""
 
 #. Name of the template
 msgid "Сайдбар с заявкой"
 msgstr ""
+
+#. Name of the template
+msgid "Сайдбар с новостями"
+msgstr ""
+
+#. Name of the template
+msgid "Шаблон новостной страницы"
+msgstr ""
+
+#: page-news.php:50
+msgid "Назад"
+msgstr "Older News"
+
+#: page-news.php:51
+msgid "Вперед"
+msgstr "Newer posts"
+
+#: sidebar.php:2 sidebar-proposal.php:2 sidebar-contact_us.php:2
+#: sidebar-news.php:2
+msgid "Наши партнеры"
+msgstr "Our Partners"
+
+#: sidebar-proposal.php:4
+msgid "Заявка"
+msgstr "Application"
+
+#: sidebar-proposal.php:9
+msgid "Заполнить заявку"
+msgstr "Fill application"
 
 #: footer.php:7 helpers/favpress_options.php:41
 msgid "Адрес"
@@ -95,19 +132,15 @@ msgid "Карта сайта"
 msgstr "Sitemap"
 
 #. Name of the template
-msgid "Шаблон новостной страницы"
+msgid "Cайдбар с формой обартной связи"
 msgstr ""
 
-#: sidebar-proposal.php:4
-msgid "Заявка"
-msgstr ""
+#: sidebar-contact_us.php:4
+msgid "Вопрос"
+msgstr "Question"
 
-#: sidebar-proposal.php:9
-msgid "Заполнить заявку"
-msgstr ""
-
-#. Name of the template
-msgid "Пустой сайдбар"
+#: helpers/options.php:4
+msgid "Theme Settings"
 msgstr ""
 
 #: helpers/news.php:7
@@ -146,12 +179,8 @@ msgstr ""
 msgid "новости не найдена в корзине"
 msgstr ""
 
-#: helpers/news.php:40 helpers/news.php:69
+#: helpers/news.php:40 helpers/news.php:70
 msgid "Новостей нет"
-msgstr ""
-
-#: helpers/options.php:4
-msgid "Theme Settings"
 msgstr ""
 
 #: helpers/favpress_options.php:4

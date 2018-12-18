@@ -13,7 +13,7 @@
 		  	<?php
 		  		$obj = get_post_type_object('post');
 		  	 ?>
-		  	 ››
+		  	 &#187;
 		  	<li class="list-inline-item" itemprop="itemListElement" itemscope
 		      itemtype="http://schema.org/ListItem">
 		    <a itemtype="http://schema.org/Thing"
@@ -25,7 +25,7 @@
 		  <?php endif; ?>
 		  <?php if(!is_front_page()): ?>
 		  		<?php global $wp; ?>
-			  ››
+			  &#187;
 			  <li class="list-inline-item" itemprop="itemListElement" itemscope
 			      itemtype="http://schema.org/ListItem">
 			    <a itemtype="http://schema.org/Thing"
@@ -37,11 +37,13 @@
 		</ol>
     </div>
     <div class="content">
+
 	    <?php 
 		if ( have_posts() ) {
 			while ( have_posts() ) {
-				the_post(); 
-				the_content();
+				the_post(); ?>
+				<span class="title-page"><?php the_title(); ?></span>
+			<?php	the_content();
 			}
 		}
 		?>

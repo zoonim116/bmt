@@ -25,7 +25,36 @@
     </div>
     <span class="title-page"><?php the_title(); ?></span>
     <div class="news-wrap">
-		<?php do_action('get_news_action'); ?>
+		<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$args = array('posts_per_page' => (get_option('posts_per_page')) ? get_option('posts_per_page') : 10, 'paged' => $paged, 'post_type'       => 'post' );
+query_posts($args); ?>
+		<?php if ( have_posts() ) : ?>
+
+<!-- Add the pagination functions here. -->
+
+<!-- Start of the main loop. -->
+<?php while ( have_posts() ) : the_post();  ?>
+<div class="news-item">
+	<a href="<?php the_permalink(); ?>" class="news-title">
+        <?php the_title(); ?>
+    </a>
+		<a href="#" class="data-news"><?php echo get_the_date(); ?></a>
+    <a href="<?php the_permalink(); ?>" class="short-news"> <?php do_action('get_translated_content_action', get_the_content(), 0, 200); ?>...</a>
+</div>
+
+<?php endwhile; ?>
+<!-- End of the main loop -->
+
+<!-- Add the pagination functions here. -->
+
+<div class="nav-previous alignleft"><?php previous_posts_link( __('Вперед', 'bmt')); ?></div>
+<div class="nav-next alignright"><?php next_posts_link( __('Назад', 'bmt')); ?></div>
+
+<?php else : ?>
+<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif; ?>
+
+		<?php //do_action('get_news_action'); ?>
     </div>
     <?php if(is_front_page()): ?>
 		<div class="last-news">
